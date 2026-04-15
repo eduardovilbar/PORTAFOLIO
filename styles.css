@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+    position: fixed; /* Se queda fija respecto a la ventana */
+    top: 0;          /* Pegada arriba */
+    left: 0;         /* Pegada a la izquierda */
+    width: 100%;     /* Que ocupe todo el ancho */
+    z-index: 1000;   /* Para que pase por encima de las fotos y textos */
+}
+
+.logo span {
+  color: red;
+}
+
+nav a {
+  margin-left: 20px;
+  color: gray;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background: radial-gradient(circle at center, #0a1a3a, black);
+}
+
+.hero h1 {
+  font-size: 70px;
+}
+
+.hero span {
+  color: red;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.btn-outline {
+  border: 1px solid blue;
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  padding: 50px;
+  background: radial-gradient(circle at center, #3a0a0a, black);
+}
+
+.about span {
+  color: blue;
+}
+
+.photo  {
+  width: 300px;
+  height: 300px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 50px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid #333;
+}
+
+/* CV */
+.cv {
+  padding: 50px;
+}
+
+.bar {
+  background: #333;
+  height: 10px;
+  margin-bottom: 20px;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(to right, red, blue);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+#botonHuidizo {
+    position: absolute; /* O fixed */
+    transition: all 0.2s ease; /* Para que el movimiento sea suave y no un salto brusco */
+    z-index: 999; /* Para que siempre esté por encima de todo */
+      border: 1px solid blue;
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+}
